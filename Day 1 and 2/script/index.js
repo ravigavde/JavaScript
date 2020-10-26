@@ -171,3 +171,103 @@
 // }
 // console.log(a);
 
+
+/*
+let data = "this data is a new DaTa for regular expression data";
+
+let reg = /data/;
+
+reg = /data/gi; //g--- global for searching entire string, i--- case insensitive
+
+console.log(reg.source);
+
+//1) finding string and flags
+
+let ans = reg.exec(data);
+console.log(ans);
+ans = reg.exec(data);
+console.log(ans);
+ans = reg.exec(data);
+console.log(ans);
+
+//2) test function
+let data2 = "this is  a New data type for the new class of data types";
+let reg2 = /ata/;
+
+let result = reg2.test(data2);
+console.log(result);
+
+// 3) match() gives the array of the matched items and if not found it will return the null
+let data3 = "This is a new set for the new data types";
+let reg3 = /new/g;
+
+console.log(data3.match(reg3));
+
+// 4) search() if found it will return the index and if not the function will return the -1 value
+
+let data4 =
+  "searching the new data type in the complex data stream is very difficult";
+let reg4 = /searching/;
+console.log(data4.search(reg4));
+
+// 5) replace() return new replaced string with all the replacements
+
+let data5 =
+  " this is a new repalcemnts for the new type of the programming project, that is to be done on new system";
+
+let reg5 = /new/g;
+
+console.log(data5.replace(reg5, "--- replaced string ---"));
+
+
+// meta characters
+
+// ^abc --starts with abc,,    abc$ ends with abc
+let data6 = "this data wil give idea about new data";
+// let reg6 = /i.ea/g;  // the dot[.] states that to match only one char after i
+
+let reg6 = /i*dea/g;  // the Star[*] states that to match from 0 to many  char after i
+
+
+if (reg6.test(data6)) {
+  console.log(`the string ${data6} matches with the expression ${reg6} `);
+} else {
+  console.log(`the string ${data6} does not matches with the expression ${reg6} `);
+}
+let data7  = "this is an example of optional characters"
+let reg7 = /exda?mple/;
+console.log(reg7.test(data7));
+
+
+// email validator
+
+let  email = prompt("Enter your email address");
+
+let reg_email = /^[a-z A-Z 0-9 _ -]+@[a-zA-Z]+\.com$/g;
+
+if(reg_email.test(email)){
+    document.write("correct email");
+} else{
+    document.write("incorrect email");
+}
+
+quantifiers 
+let data8 = "this is a neew data type for the neew evaluation for the neew position as a neew analsyt required ";
+const reg8 = /ne{2}w/g;
+console.log(reg8.test(data8));
+
+Modifiers, Brackets
+*/
+
+// shorthand character
+// \w ---- word character -  _ or alpahbet or numebrss
+// \w+ --- one or more 
+// \W  -- non word character 
+// \d -- digit 
+// \D ---non digit
+// \s  --- white space character
+// \S
+
+//assertions 
+//regex = /h(?=y)/  if we want t osearch for h and we want y to be the next letter
+//  let data = "this is a mew data type ";
