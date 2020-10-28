@@ -271,3 +271,109 @@ Modifiers, Brackets
 //assertions 
 //regex = /h(?=y)/  if we want t osearch for h and we want y to be the next letter
 //  let data = "this is a mew data type ";
+
+
+// console.log("Hello code is working for callbacks");
+
+// let players =  [
+//         {name:"Ravi" , work:"Programming"},
+//         {name:"Soap" , work:"TaskForce141"},
+//         {name:"Price" , work:"TaskForce141"},
+//         {name:"Gaz" , work:"TaskForce141"},
+// ]
+
+// function fetch(){
+//     players.forEach(function(element){
+//     console.log(element.name + " is doing " +element.work );
+// })
+// }
+
+// function addPlayers(namee, workk, callback){
+
+//     let newStudent =  {    name : `${namee}`,  work : `${workk}`  }  ;
+//     players.push(newStudent);
+//     fetch();
+// }
+
+// let name = "URI" ;
+// let work= "taskForce141";
+// addPlayers(name,work,fetch);
+
+// similiar example for async, we will alter the flow of the code
+
+// let players = [
+//   { name: "Ravi", work: "Programming" },
+//   { name: "Soap", work: "TaskForce141" },
+//   { name: "Price", work: "TaskForce141" },
+//   { name: "Gaz", work: "TaskForce141" },
+// ];
+
+// function fetch() {
+//     setTimeout(function(){
+//         players.forEach(function (element) {
+//             let rawData = element.name;
+//             console.log(element.name + " is doing " + element.work);
+//             document.getElementById('players').innerHTML = rawData;
+//         console.log("Players have been fetched");
+
+//           });
+//     },1000)
+// }
+
+// function addPlayers(namee, workk, callback) {
+//   setTimeout(function () {
+//     let newStudent = { name: `${namee}`, work: `${workk}` };
+//     players.push(newStudent);
+//     fetch();
+//   }, 3000);
+// }
+
+// let name = "URI";
+// let work = "taskForce141";
+// addPlayers(name, work, fetch);
+
+// promise 
+
+// function callAirdrop(value){
+//     console.log("This function will be executed for doing the airdrop requested");
+//     return new Promise(function(resolve,reject){
+//         let airDropCalled = value;
+//         if(airDropCalled == true){
+//             console.log("Airdrop has been requested...!!! Prepairing for dispatch");
+//             resolve();
+//         }
+//         else{   
+//             console.log("Airdrop is not requested !!! Enemy intrusion detected");
+//             reject();
+//         }
+//     })
+// }
+
+// let req = true
+// callAirdrop(req).then(function(){
+//     console.log("The air drop has been sucessfully initiated ");
+// }).catch(function(){
+//     console.log("The airdrop has been terminated for false initiation ");
+// });
+
+
+
+
+//////////////////
+
+// async function func(){
+//     console.log('Inside func function');
+//     const response = await fetch('https://api.github.com/users');
+//     console.log('before response');
+//     const users = await response.json();
+//     console.log('users resolved')
+//     return users;
+
+// }
+
+// console.log("Before calling func")
+// let a = func();
+// console.log("After calling func")
+// console.log(a);
+// a.then(data => console.log(data))
+// console.log("Last line of this js file")
